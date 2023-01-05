@@ -173,6 +173,11 @@ button:focus,
     width: 33%;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* end grid fallback for older browsers*/
 
 /* If browser supports CSS grid, use it: */

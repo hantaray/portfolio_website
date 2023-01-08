@@ -170,7 +170,7 @@ table {
     .grid__item {
         background-color: var(--light-gray);
         width: auto;
-        min-height: auto;
+        min-height: 250px;
         margin: 0;
         padding: 0 10px 10px 10px;
     }

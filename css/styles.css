@@ -172,6 +172,7 @@ table {
         width: auto;
         min-height: auto;
         margin: 0;
+        padding: 0 10px 10px 10px;
     }
 
     .grid__item:last-child {

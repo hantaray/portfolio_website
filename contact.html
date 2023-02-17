@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <title>Contact Alexander Hantke</title>
 </head>
@@ -52,18 +53,22 @@
     <br>
     <div>
         <form action="" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">E-mail:* </label>
-            <br>
-            <input type="email" id="contact-email" required>
-            <br>
-            <label class="standard-label" for="contact-phone">Telephone: </label>
-            <br>
-            <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-            <br>
-            <label class="standard-label" for="contact-message">Message:* </label>
-            <br>
-            <textarea maxlength="240" id="contact-message" required></textarea>
-            <br>
+            <div class="input-wrapper">
+                <label class="standard-label" for="contact-email">E-mail:* </label>
+                <br>
+                <input type="email" id="contact-email" required>
+            </div>
+            <div class="input-wrapper">
+                <label class="standard-label" for="contact-phone">Telephone: </label>
+            </div>
+            <div class="input-wrapper">
+                <input type="tel" id="contact-phone" pattern="\d{3}\d{3}\d{4}">
+            </div>
+            <div class="input-wrapper">
+                <label class="standard-label" for="contact-message">Message:* </label>
+                <br>
+                <textarea maxlength="240" id="contact-message" required></textarea>
+            </div>
             <br>
             <input type="submit" value="Send message">
             <p>* required field</p>
@@ -86,6 +91,7 @@
     </footer>
 
     <!-- <script src="js/tota11y.min.js"></script> -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

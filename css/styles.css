@@ -192,7 +192,7 @@ table {
 
     .grid__item:last-child {
         grid-column: 1 / 1;
-        grid-row: 3 / 3;
+        grid-row: 5 / 5;
     }
 }
 

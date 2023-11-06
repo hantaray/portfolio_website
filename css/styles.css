@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     /* Sets the line-height to 1.6 */
     line-height: 1.6;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     color: #0cc0df;
 }
@@ -51,6 +51,11 @@ label {
 .myLogo {
     width: 10%;
     height: 10%;
+}
+
+.project-screnshot{
+    width: 420px;
+    height: 213px;
 }
 
 a:visited {
@@ -172,13 +177,13 @@ table {
     .grid {
         display: grid;
         /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         margin: 20px;
     }
 
     .grid__item {
-        background-color: var(--light-gray);
+        background-color: var(--background-color);
         width: auto;
         min-height: 250px;
         margin: 0;
@@ -186,8 +191,8 @@ table {
     }
 
     .grid__item:last-child {
-        grid-column: 3 / 3;
-        grid-row: 1 / 3;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
     }
 }
 

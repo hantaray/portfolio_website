@@ -1,15 +1,27 @@
 :root {
-    --primary-color: #357b70;
+    --primary-color: black;
     --secondary-color: #e0b354;
     --dark-grey: #2b2b2b;
     --light-gray: lightgray;
     --white: white;
-    --background-color: #141234;
+    /* --background-color: #141234; */
+    /* --background-color: #D98310; */
+    /* --background-color: #FBA100; */
+    --background-color: #F98E02;
+    /* --background-color: #0B3C5D; */
+    
     --color-change-1: #edc655;
     --color-change-2: #fcffad;
     --color-change-3: #f76414;
 
     --font-weight: 700;
+}
+
+html {
+    /* box-shadow: inset 0px 0px 30px 10px rgb(200, 200, 25); */
+    /* box-shadow: inset 0px 0px 60px 20px #005d52; */
+    /* box-shadow: inset 0px 0px 60px 20px #007759; */
+    min-height: 100%;
 }
 
 body {
@@ -22,12 +34,13 @@ body {
     line-height: 1.6;
     margin: 20px;
     text-align: center;
-    color: #0cc0df;
+    color: black;
 }
 
 h1 {
-    font-size: 30px;
+    /* font-size: 30px; */
     font-weight: var(--font-weight);
+    text-shadow: 2px 2px 5px #429B45;
 }
 
 h2 {
@@ -111,16 +124,47 @@ button:focus,
     text-decoration: none;
 }
 
-.profile__portrait {
-    float: left;
+.profile {
+    display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+    /* max-width: 700px; */
+    /* margin: 0 auto; */
+    /* background-color: #007759; */
+    background-color: #005d52;
+    /* box-shadow: inset 0 0 50px #F98E02;
+    border: 2px solid #429B45; */
+}
+
+.profile_portrait {
+    /* float: left;
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
+    background-color: #FFFFFF;
+	/* position: relative; */
+    /* box-shadow: 0px 0px 60px 20px rgb(200, 200, 25); */
+    /* border: 2px solid rgb(200, 200, 25); */
+    /* box-shadow: inset 0 0 10px #f8a100; */
+    /* box-shadow: inset 8px 16px 16px 8px rgb(0, 140, 58), 20px 20px 20px 20px rgba(0, 0, 0, 0.19); */
 }
 
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
+.profile_portrait_image {
+    float: right;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+	/* position: relative; */
+    box-shadow: 0px 0px 60px 20px #429B45;
+    /* border: 2px solid rgb(200, 200, 25); */
+    border: 2px solid #429B45;
+    /* box-shadow: inset 0 0 10px #f8a100; */
+    /* box-shadow: inset 8px 16px 16px 8px rgb(0, 140, 58), 20px 20px 20px 20px rgba(0, 0, 0, 0.19); */
+}
+
+.profile_text {
+    align-items: start;
 }
 
 * {

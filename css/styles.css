@@ -53,9 +53,9 @@ label {
     height: 10%;
 }
 
-.project-screnshot {
-    width: 420px;
-    height: 213px;
+.project-screenshot {
+    width: 80%;
+    height: auto;
 }
 
 a:visited {
@@ -208,8 +208,8 @@ table {
 
     .grid__item {
         background-color: var(--background-color);
-        width: auto;
-        min-height: 250px;
+        width: 100%;
+        height: auto;
         margin: 0;
         padding: 0 10px 10px 10px;
     }

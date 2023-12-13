@@ -48,7 +48,7 @@ h3 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--toolbar-color);
     font-size: 22px;
 }
 
@@ -61,9 +61,10 @@ label {
 }
 
 .myLogo {
-    width: 10%;
+    width: 150px;
     height: 10%;
     margin: 20px;
+    align-self: center;
 }
 
 .project-screenshot {
@@ -156,7 +157,7 @@ button:focus,
 .skills {
     scroll-margin-top: 100px;
     padding: 50px;
-    padding-top: 30px;
+    padding-top: 50px;
     margin-bottom: 20px;
     background-color: var(--toolbar-color);
     color: #DF9F37;
@@ -164,12 +165,12 @@ button:focus,
 
 .work {
     scroll-margin-top: 100px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .contact {
     scroll-margin-top: 100px;
-    padding: 50px;
+    padding-top: 60px;
 }
 
 .page-footer {
@@ -179,7 +180,7 @@ button:focus,
     text-align: center;
 }
 
-.page-header {
+.header-content {
     overflow: hidden;
     display: flex;
     width: 100%;
@@ -286,6 +287,24 @@ td {
         padding: 0px;
         display: grid;
         grid-template-columns: auto;
+        margin-top: 220px;
+    }
+
+    .page-header__item {
+        margin: 0px;
+    }
+
+    .skills {
+        padding: 0px;
+        padding-top: 80px;
+    }
+
+    .work {
+        padding-top: 80px;
+    }
+
+    .contact {
+        padding-top: 80px;
     }
 }
 
@@ -351,4 +370,22 @@ td {
 
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }

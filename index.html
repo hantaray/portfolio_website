@@ -18,7 +18,7 @@
         posthog.init('phc_vsTWug6P9n28uDD6CpIAHEML5z1Sw30j2vPz6KaosMf', { api_host: 'https://eu.posthog.com' })
     </script>
 
-    <title>Alexander Hantke - Portfolio-Website</title>
+    <title>Alexander Hantke - Portfolio</title>
 </head>
 
 <body>
@@ -26,23 +26,24 @@
     <header class="page-header">
         <img class="myLogo" src="img/alexander-hantke-logo-landscape.png"
             alt="Personal logo of Alexander Hantke, a text logo in letters that consists of my name, a symbol and a short description">
+
         <nav class="main-navigation page-header__item">
             <div>
                 <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" aria-label="link to the home-page"
-                            class="navigation-list__item navigation-list__item--active">Home</a>
+                    <li class="nav-link smooth-scroll" role="presentation">
+                        <a href="#" role="menuitem" aria-label="link to the home-section"
+                            class="navigation-list__item navigation-list__item--active">About</a>
                     </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" aria-label="link to the about-page"
-                            class="navigation-list__item">About</a>
+                    <li class="nav-link smooth-scroll" role="presentation">
+                        <a href="#skills" role="menuitem" aria-label="link to the about-section"
+                            class="navigation-list__item">Skills</a>
                     </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" aria-label="link to the work-page"
+                    <li class="nav-link smooth-scroll" role="presentation">
+                        <a href="#work" role="menuitem" aria-label="link to the work-section"
                             class="navigation-list__item">Work</a>
                     </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" aria-label="link to the contact-page"
+                    <li class="nav-link smooth-scroll" role="presentation">
+                        <a href="#contact" role="menuitem" aria-label="link to the contact-section"
                             class="navigation-list__item">Contact</a>
                     </li>
                 </ul>
@@ -56,10 +57,11 @@
                 alt="Portrait image of Alexander Hantke">
         </div>
         <div class="profile_text">
-            <h1>Hello world!</h1>
-            <p>My name is Alexander Hantke.</p>
-            <p>I am a full-stack developer from Berlin.</p>
-            <a href="work.html">Check out some of my code</a>
+            <h1>Hi there, my name is Alexander Hantke.</h1>
+            <h2>I am a Fullstack Web-, Mobile- and Games-Developer from Berlin</h2>
+            <h2>Welcome on my page :)</h2>
+            <h3>Check out some of my <a href="#work">projects</a> and feel free to <a href="#contact">contact</a> me to
+                get in touch.</h3>
         </div>
         <!-- <br>
         <a href="#">Default Link</a>
@@ -69,14 +71,17 @@
         <button class="button__secondary">Secondary Button</button> -->
     </div>
 
-    <div>
+    <div class="skills" id="skills">
         <h2>Here are some of my skills:</h2>
+        <p><b>Languages: </b>JavaScript, Python, PHP, Java, C#, GDScript, Lua</p>
         <table>
             <thead>
                 <tr>
                     <td><b>Frontend</b></td>
                     <td><b>Backend</b></td>
                     <td><b>Testing</b></td>
+                    <td><b>Game-Engines</b></td>
+                    <td><b>Tools</b></td>
                 </tr>
             </thead>
             <tbody>
@@ -84,24 +89,28 @@
                     <td>React/React-Redux</td>
                     <td>Node.js</td>
                     <td>Test-Driven Development</td>
+                    <td>Unity</td>
+                    <td>Git</td>
                 </tr>
                 <tr>
                     <td>Angular</td>
                     <td>RESTful APIs</td>
                     <td>Behavior-Driven Development</td>
+                    <td>Godot</td>
+                    <td>JWT</td>
                 </tr>
                 <tr>
                     <td>JavaScript</td>
                     <td>MongoDB, SQL, PostgreSQL</td>
                     <td>React Testing Library</td>
+                    <td>Phaser</td>
+                    <td>OAuth2</td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <br>
-    <!-- <a href="files/cv.pdf" class="button" download>Download my CV</a> -->
-    <section>
-        <h1>Work</h1>
+    <section class="work" id="work">
+        <h1>Examples of my work</h1>
         <div class="grid">
             <div class="grid__item">
                 <h2>"Blobby's Rising"</h2>
@@ -119,16 +128,30 @@
                     App Store</a>
             </div>
             <div class="grid__item">
-                <h2>"Überbau"</h2>
-                <img class="project-screenshot" src="img/screenshot_uberbau.png"
-                    alt="screenshot of the ueberbau software">
-                <h3>Software for construction-project-management and enterprise-management</h3>
+                <h2>"MyFlix Angular"</h2>
+                <img class="project-screenshot" src="img/screenshot-myflix-angular.png"
+                    alt="screenshot of the meet app">
                 <p>
-                    At <a href="https://www.ueberbau.tech/">Metis AG</a> I was working
-                    on the front-end of "Überbau" with JavaScript, CSS and Sencha/ExtJs. And in the back-end with PHP,
-                    C#/.NET and Python.
+                    A Web-Application for movies, made with Angular. You can create a profile, search for movies, get
+                    more information and add them to your profile.
                 </p>
-                <a target="_blank" href="https://www.ueberbau.tech/">Learn more about Überbau</a>
+                <p>Angular, MongoDB, Express.js, Node.js, Angular Material</p>
+                <a target="_blank" href="https://hantaray.github.io/myflix-angular/welcome">Check out MyFlix here</a>
+                <br>
+                <a target="_blank" href="https://github.com/hantaray/myflix-angular">MyFlix on GitHub</a>
+            </div>
+            <div class="grid__item">
+                <h2>"MyFlix React"</h2>
+                <img class="project-screenshot" src="img/screenshot-myflix-react.png" alt="screenshot of the meet app">
+                <p>
+                    A Web-Application for movies, made with ReactJS. You can create a profile, search for movies, get
+                    more information and add them to your profile.
+                </p>
+                <p>React, JavaScript, Bootstrap, React-Router, Parcel
+                </p>
+                <a target="_blank" href="https://myflixone.netlify.app/login">Check out Myflix here</a>
+                <br>
+                <a target="_blank" href="https://github.com/hantaray/myFlix-client">MyFlix on GitHub</a>
             </div>
             <div class="grid__item">
                 <h2>"Meet"</h2>
@@ -157,37 +180,23 @@
                 <a target="_blank" href="https://github.com/hantaray/pokedex">Pokedex on GitHub</a>
             </div>
             <div class="grid__item">
-                <h2>"MyFlix React"</h2>
-                <img class="project-screenshot" src="img/screenshot-myflix-react.png" alt="screenshot of the meet app">
+                <h2>"Überbau"</h2>
+                <img class="project-screenshot" src="img/screenshot_uberbau.png"
+                    alt="screenshot of the ueberbau software">
+                <h3>Software for construction-project-management and enterprise-management</h3>
                 <p>
-                    A Web-Application for movies, made with ReactJS. You can create a profile, search for movies, get
-                    more information and add them to your profile.
+                    At <a href="https://www.ueberbau.tech/">Metis AG</a> I was working
+                    on the front-end of "Überbau" with JavaScript, CSS and Sencha/ExtJs. And in the back-end with PHP,
+                    C#/.NET and Python.
                 </p>
-                <p>React, JavaScript, Bootstrap, React-Router, Parcel
-                </p>
-                <a target="_blank" href="https://myflixone.netlify.app/login">Check out Myflix here</a>
-                <br>
-                <a target="_blank" href="https://github.com/hantaray/myFlix-client">MyFlix on GitHub</a>
-            </div>
-            <div class="grid__item">
-                <h2>"MyFlix Angular"</h2>
-                <img class="project-screenshot" src="img/screenshot-myflix-angular.png"
-                    alt="screenshot of the meet app">
-                <p>
-                    A Web-Application for movies, made with Angular. You can create a profile, search for movies, get
-                    more information and add them to your profile.
-                </p>
-                <p>Angular, MongoDB, Express.js, Node.js, Angular Material</p>
-                <a target="_blank" href="https://hantaray.github.io/myflix-angular/welcome">Check out MyFlix here</a>
-                <br>
-                <a target="_blank" href="https://github.com/hantaray/myflix-angular">MyFlix on GitHub</a>
+                <a target="_blank" href="https://www.ueberbau.tech/">Learn more about Überbau</a>
             </div>
             <div class="grid__item">
                 <h2>"Movie API"</h2>
                 <!-- <img class="project-screenshot" src="img/screenshot_meet.png" alt="screenshot of the meet app"> -->
                 <p>
-                    Made with node.js and built with express this contains the API for the MyFlix
-                    Applications.
+                    The backend for the MyFlix applications. Made with node.js and express - the data is stored in
+                    MongoDB Atlas and it runs on render.
                 </p>
                 <p>Node.js, Express, MongoDB, Mongoose
                 </p>
@@ -211,15 +220,16 @@
                 <p>
                     I can help in realizing you front-end, back-end, app and game projects.
                 </p>
-                <a href="#">Contact me</a>
+                <a href="#contact">Contact me</a>
             </div>
         </div>
     </section>
-    <div>
+    <div class="contact" id="contact">
+        <h1>Contact</h1>
         Skype <a href="skype:live:ahantke_4"> live:ahantke_4</a><br>
         Mail <a href="mailto:alexander-hantke@mail.de">alexander-hantke@mail.de</a><br>
         <br>
-        <a href="mailto:alexander-hantke@mail.de">Contact me</a>
+        <a href="mailto:alexander-hantke@mail.de">Write mail</a>
     </div>
     <br>
     <br>
@@ -1565,8 +1575,6 @@
             </a>
         </div>
     </footer>
-
-    <!-- <script src="js/tota11y.min.js"></script> -->
 </body>
 
 </html>

@@ -30,21 +30,21 @@
         <nav class="main-navigation page-header__item">
             <div>
                 <ul role="menubar" class="navigation-list">
-                    <li class="nav-link smooth-scroll" role="presentation">
+                    <li role="presentation" class="navigation-list__list-item">
                         <a href="#" role="menuitem" aria-label="link to the home-section"
-                            class="navigation-list__item navigation-list__item--active">About</a>
+                            class="navigation-list__item navigation-list__item--active">ABOUT</a>
                     </li>
-                    <li class="nav-link smooth-scroll" role="presentation">
+                    <li role="presentation" class="navigation-list__list-item">
                         <a href="#skills" role="menuitem" aria-label="link to the about-section"
-                            class="navigation-list__item">Skills</a>
+                            class="navigation-list__item">SKILLS</a>
                     </li>
-                    <li class="nav-link smooth-scroll" role="presentation">
+                    <li role="presentation" class="navigation-list__list-item">
                         <a href="#work" role="menuitem" aria-label="link to the work-section"
-                            class="navigation-list__item">Work</a>
+                            class="navigation-list__item">WORK</a>
                     </li>
-                    <li class="nav-link smooth-scroll" role="presentation">
+                    <li role="presentation" class="navigation-list__list-item">
                         <a href="#contact" role="menuitem" aria-label="link to the contact-section"
-                            class="navigation-list__item">Contact</a>
+                            class="navigation-list__item">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -57,22 +57,16 @@
                 alt="Portrait image of Alexander Hantke">
         </div>
         <div class="profile_text">
-            <h1>Hi there, my name is Alexander Hantke.</h1>
-            <h2>I am a Fullstack Web-, Mobile- and Games-Developer from Berlin</h2>
-            <h2>Welcome on my page :)</h2>
-            <h3>Check out some of my <a href="#work">projects</a> and feel free to <a href="#contact">contact</a> me to
+            <h1>ALEXANDER HANTKE</h1>
+            <h2>Fullstack Web-, Mobile- and Games-Developer from Berlin</h2>
+            <h3>Check out my <a class="profile-link" href="#work">work</a> and feel free to <a class="profile-link"
+                    href="#contact">contact</a> me to
                 get in touch.</h3>
         </div>
-        <!-- <br>
-        <a href="#">Default Link</a>
-        <br>
-        <button type="button">Default Button</button>
-        <br>
-        <button class="button__secondary">Secondary Button</button> -->
     </div>
 
     <div class="skills" id="skills">
-        <h2>Here are some of my skills:</h2>
+        <h2>HERE ARE SOME OF MY SKILLS:</h2>
         <p><b>Languages: </b>JavaScript, Python, PHP, Java, C#, GDScript, Lua</p>
         <table>
             <thead>
@@ -110,7 +104,7 @@
         </table>
     </div>
     <section class="work" id="work">
-        <h1>Examples of my work</h1>
+        <h1>EXAMPLES OF MY WORK</h1>
         <div class="grid">
             <div class="grid__item">
                 <h2>"Blobby's Rising"</h2>
@@ -129,10 +123,11 @@
             </div>
             <div class="grid__item">
                 <h2>"MyFlix Angular"</h2>
-                <img class="project-screenshot" src="img/screenshot-myflix-angular.png"
+                <img class="project-screenshot" src="img/screenshot-myflix-angular-black.png"
                     alt="screenshot of the meet app">
+                <h3>A Web-Application for movies, made with Angular.</h3>
                 <p>
-                    A Web-Application for movies, made with Angular. You can create a profile, search for movies, get
+                    You can create a profile, search for movies, get
                     more information and add them to your profile.
                 </p>
                 <p>Angular, MongoDB, Express.js, Node.js, Angular Material</p>
@@ -143,8 +138,9 @@
             <div class="grid__item">
                 <h2>"MyFlix React"</h2>
                 <img class="project-screenshot" src="img/screenshot-myflix-react.png" alt="screenshot of the meet app">
+                <h3>A Web-Application for movies, made with ReactJS.</h3>
                 <p>
-                    A Web-Application for movies, made with ReactJS. You can create a profile, search for movies, get
+                    You can create a profile, search for movies, get
                     more information and add them to your profile.
                 </p>
                 <p>React, JavaScript, Bootstrap, React-Router, Parcel
@@ -194,8 +190,9 @@
             <div class="grid__item">
                 <h2>"Movie API"</h2>
                 <!-- <img class="project-screenshot" src="img/screenshot_meet.png" alt="screenshot of the meet app"> -->
+                <h3>The backend for the MyFlix applications.</h3>
                 <p>
-                    The backend for the MyFlix applications. Made with node.js and express - the data is stored in
+                    Made with node.js and express - the data is stored in
                     MongoDB Atlas and it runs on render.
                 </p>
                 <p>Node.js, Express, MongoDB, Mongoose
@@ -205,8 +202,9 @@
             <div class="grid__item">
                 <h2>"MyChat"</h2>
                 <img class="project-screenshot" src="img/screenshot-mychat.jpeg" alt="screenshot of the meet app">
+                <h3>A chat application made with React Native and Expo.</h3>
                 <p>
-                    A chat application made with React Native and Expo. It uses Gifted Chat and Firebase (Cloud
+                    It uses Gifted Chat and Firebase (Cloud
                     Firestore, Storage). You can authentificate with a username, choose a background color for your
                     chat, send and recieve messages, pick images from your gallery, take photos and send your
                     geolocation.
@@ -225,7 +223,7 @@
         </div>
     </section>
     <div class="contact" id="contact">
-        <h1>Contact</h1>
+        <h1>CONTACT</h1>
         Skype <a href="skype:live:ahantke_4"> live:ahantke_4</a><br>
         Mail <a href="mailto:alexander-hantke@mail.de">alexander-hantke@mail.de</a><br>
         <br>
@@ -1565,11 +1563,13 @@
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
-            <a href="https://github.com/hantaray" target="_blank">
+            <!-- todo -->
+            <a class="profile-link" href="https://github.com/hantaray" target="_blank">
                 <!-- GitHub logo -->
                 <img src="img/github_icon.svg" alt="GitHub">
             </a>
-            <a href="https://www.linkedin.com/in/alexander-hantke-ab7759241/" target="_blank">
+            <!-- todo -->
+            <a class="profile-link" href="https://www.linkedin.com/in/alexander-hantke-ab7759241/" target="_blank">
                 <!-- LinkedIn logo -->
                 <img src="img/linkedin_icon.svg" alt="LinkedIn">
             </a>

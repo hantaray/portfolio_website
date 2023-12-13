@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #357b70;
+    --primary-color: #DF9F37;
     --secondary-color: #e0b354;
     --dark-grey: #2b2b2b;
     --light-gray: lightgray;
     --white: white;
     /* --background-color: #141234; */
-    --background-color: #0cc0df;
+    --background-color: #DF9F37;
     --toolbar-color: #141234;
     --color-change-1: #edc655;
     --color-change-2: #fcffad;
@@ -24,7 +24,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     /* Sets the font size to 16px */
-    font-size: 16px;
+    font-size: 20px;
     /* Sets the line-height to 1.6 */
     line-height: 1.6;
     margin: 20px;
@@ -33,22 +33,27 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: var(--font-weight);
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: var(--font-weight);
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: var(--font-weight);
 }
 
 a {
     color: var(--primary-color);
+    font-size: 22px;
+}
+
+p {
+    font-size: 22px;
 }
 
 label {
@@ -123,20 +128,25 @@ button:focus,
     scroll-margin-top: 100%;
     padding: 100px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     /* background-color  : #2196F3; */
     margin-top: 150px;
 }
 
 .profile_portrait_image {
-    float: right;
-    width: 250px;
+    /* float: right; */
+    width: 270px;
     border-radius: 50%;
     border: 2px solid var(--toolbar-color);
 }
 
 .profile_text {
-    align-items: start;
+    /* align-items: start; */
+}
+
+.profile-link {
+    /* todo */
+    color: var(--toolbar-color) !important;
 }
 
 * {
@@ -146,8 +156,10 @@ button:focus,
 .skills {
     scroll-margin-top: 100px;
     padding: 50px;
+    padding-top: 30px;
+    margin-bottom: 20px;
     background-color: var(--toolbar-color);
-    color: #0cc0df;
+    color: #DF9F37;
 }
 
 .work {
@@ -168,23 +180,36 @@ button:focus,
 }
 
 .page-header {
+    overflow: hidden;
     display: flex;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background-color: var(--toolbar-color);
-    /* padding: 20px; */
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+    /* flex: 0 1 200px; */
     margin-right: 20px;
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
 }
 
 .page-header__item:last-child {
     flex-grow: 1;
     text-align: right;
+}
+
+.main-navigation {
+    margin-top: 20px;
 }
 
 .navigation-list {
@@ -208,6 +233,16 @@ button:focus,
 table {
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+    font-size: 20px;
+}
+
+thead {
+    font-size: 25px;
+}
+
+td {
+    padding: 10px;
 }
 
 /* If browser supports CSS grid, use it: */
@@ -216,7 +251,9 @@ table {
         display: grid;
         /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1px;
+        /* grid-gap-: 1px; */
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
     }
 
     .grid__item {
@@ -225,7 +262,7 @@ table {
         height: auto;
         margin: 0;
         padding: 0 10px 10px 10px;
-        color: #0cc0df;
+        color: #DF9F37;
     }
 
     .grid__item:last-child {
@@ -245,8 +282,10 @@ table {
         grid-row: auto / auto;
     }
 
-    h1 {
-        font-size: 22px;
+    .profile {
+        padding: 0px;
+        display: grid;
+        grid-template-columns: auto;
     }
 }
 
@@ -261,8 +300,10 @@ table {
         grid-row: auto / auto;
     }
 
-    h1 {
-        font-size: 22px;
+    .profile {
+        padding: 0px;
+        display: grid;
+        grid-template-columns: auto;
     }
 }
 

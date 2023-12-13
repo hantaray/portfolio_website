@@ -85,4 +85,29 @@
     emailInput.addEventListener('input', validateEmail);
     phoneInput.addEventListener('input', validatePhone);
     messageInput.addEventListener('input', validateMessage);
+
+    function addActive() {
+        // Get the container element
+        var listItemContainer = document.getElementById("navigation-list");
+        console.log('listItemContainer', listItemContainer)
+
+        // Get all listItems with class="navigation-list__list-item" inside the container
+        var listItems = listItemContainer.getElementsByClassName("navigation-list__list-item");
+        console.log('listItems', listItems)
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < listItems.length; i++) {
+            var navList__item = listItems[i].getElementsByClassName("navigation-list__item")[0]; // Get the first element
+            console.log('navList__item', navList__item)
+            navList__item.addEventListener("click", function () {
+                var current = document.getElementsByClassName("navigation-list__item--active");
+                current[0].className = current[0].className.replace(" navigation-list__item--active", "");
+                this.className += " navigation-list__item--active";
+            });
+        }
+    }
+
+
 })();
+// Call the addActive function to activate the event listeners
+addActive();

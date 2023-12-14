@@ -63,13 +63,13 @@ label {
 .myLogo {
     width: 150px;
     height: 10%;
-    margin: 20px;
+    margin-left: 20px;
     align-self: center;
 }
 
 .project-screenshot {
-    width: 80%;
-    height: auto;
+    max-width: 80%;
+    height: 300px;
 }
 
 a:visited {
@@ -119,6 +119,10 @@ button:focus,
 .button__secondary {
     background-color: var(--secondary-color);
     color: var(--dark-grey);
+}
+
+.navigation-list__item {
+    color: var(--background-color);
 }
 
 .navigation-list__item--active {
@@ -287,24 +291,62 @@ td {
         padding: 0px;
         display: grid;
         grid-template-columns: auto;
-        margin-top: 220px;
+        margin-top: 130px;
+    }
+
+    .myLogo {
+        margin-left: 10px;
     }
 
     .page-header__item {
         margin: 0px;
+        padding: 0px;
+        margin-right: 20px;
+        padding-bottom: 5px;
     }
 
     .skills {
         padding: 0px;
-        padding-top: 80px;
+        padding-top: 5px;
+        padding-bottom: 20px;
     }
 
     .work {
-        padding-top: 80px;
+        padding-top: 10px;
+        margin-bottom: 40px;
     }
 
     .contact {
-        padding-top: 80px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .project-screenshot {
+        height: 150px;
+    }
+
+    thead {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
 

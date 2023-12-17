@@ -72,6 +72,12 @@ label {
     height: 300px;
 }
 
+.project-screenshot-api {
+    /* filter: invert(61%) sepia(100%) saturate(306%) hue-rotate(356deg) brightness(88%) contrast(99%); */
+    width: 50%;
+    border: 10px solid var(--background-color);
+}
+
 a:visited {
     /* visited link */
     color: var(--primary-color);

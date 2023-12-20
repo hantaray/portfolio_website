@@ -21,13 +21,13 @@ html {
 
 body {
     background-color: var(--background-color);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Calibri', sans-serif;
     font-weight: 400;
     /* Sets the font size to 16px */
     font-size: 20px;
     /* Sets the line-height to 1.6 */
     line-height: 1.6;
-    margin: 20px;
+    margin: 0;
     text-align: center;
     color: var(--text-color);
 }
@@ -38,12 +38,12 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: var(--font-weight);
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: var(--font-weight);
 }
 
@@ -141,6 +141,7 @@ button:focus,
     display: grid;
     grid-template-columns: auto auto;
     /* background-color  : #2196F3; */
+    margin: 20px;
     margin-top: 150px;
 }
 
@@ -201,6 +202,7 @@ button:focus,
 }
 
 .page-header__item {
+    overflow: hidden;
     /* flex: 0 1 200px; */
     margin-right: 20px;
 
@@ -258,12 +260,9 @@ table {
     font-size: 20px;
 }
 
-thead {
-    font-size: 25px;
-}
-
 td {
     padding: 10px;
+    font-size: 22px;
 }
 
 /* If browser supports CSS grid, use it: */
@@ -301,11 +300,6 @@ td {
     .grid__last {
         margin-top: 10px;
     }
-
-    /* .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    } */
 
     .profile {
         padding: 0px;
@@ -345,8 +339,8 @@ td {
         height: 150px;
     }
 
-    thead {
-        font-size: 20px;
+    td {
+        font-size: 18px;
     }
 
     h1 {
@@ -362,11 +356,11 @@ td {
     }
 
     a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 

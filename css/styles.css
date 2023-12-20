@@ -292,7 +292,7 @@ td {
     } */
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 10px;
@@ -353,11 +353,11 @@ td {
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     a {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .navigation-list__item {
@@ -369,7 +369,7 @@ td {
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 600px) and (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;

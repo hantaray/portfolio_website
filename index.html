@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script>
         !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
@@ -29,6 +28,10 @@
                 alt="Personal logo of Alexander Hantke, a text logo in letters that consists of my name, a symbol and a short description">
 
             <nav class="main-navigation page-header__item">
+                <ul>
+                    <li><a href="index.html" onclick="changeLanguage('en')">English</a></li>
+                    <li><a href="index.html" onclick="changeLanguage('de')">German</a></li>
+                </ul>
                 <div>
                     <ul role="menubar" class="navigation-list">
                         <li role="presentation" class="navigation-list__list-item">
@@ -61,6 +64,7 @@
         </div>
         <div class="profile_text">
             <h1>ALEXANDER HANTKE</h1>
+            <h2 data-i18n="description1"></h2>
             <h2>Fullstack Web-, Mobile- and Games-Developer from Berlin</h2>
             <h3>Check out my <a class="profile-link" href="#work">work</a> and feel free to <a class="profile-link"
                     href="#contact">contact</a> me to

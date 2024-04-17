@@ -13,10 +13,14 @@
         return response.json();
     }
 
-    // Call updateContent() on page load
-    window.addEventListener('DOMContentLoaded', async () => {
-        const langData = await fetchLanguageData('en');
+    // Function to change language
+    async function changeLanguage(lang) {
+        console.log('lang', lang)
+        const langData = await fetchLanguageData(lang);
         updateContent(langData);
-        toggleArabicStylesheet(userPreferredLanguage);
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+        changeLanguage();
     });
 })();

@@ -94,6 +94,11 @@ a:active {
     color: var(--primary-color);
 }
 
+.language-icon {
+    width: 50px;
+    height: 50px;
+}
+
 button,
 .button {
     /* overwrites browser defaults and resets the border */
@@ -104,8 +109,6 @@ button,
     background-color: var(--primary-color);
     color: var(--white);
     text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
-    padding: 10px;
     border-radius: 3px;
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
